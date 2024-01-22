@@ -160,3 +160,69 @@ font-weight: 700;
 font-size: 1.5rem;
 z-index: 3;
 }
+
+@media screen and (max-width:375px){
+
+    main form {
+        
+        width: 60%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        /* margin-left: 6rem; */
+        flex-wrap: wrap;
+    }
+
+    li{
+        flex-wrap: wrap;
+    margin-bottom: 4rem;
+    height: 23vh;
+    width: 100%;
+    background-color: #90EE90;
+    list-style: none;
+    margin: 1rem 0px;
+    padding: 2rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+    }
+
+
+    #submit {
+        border: none;
+        height: 7vh;
+        background-color: #90EE90;
+        width: 94.5%;
+        padding: 0.5rem;
+        margin-right: 0;
+    }
+
+    main h1 {
+        margin-bottom: 2.5rem;
+        margin-top: 4rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 27px;
+        /* background-color: rgb(255, 79, 79); */
+    }
+    main form div {
+        margin-bottom: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-right: 0.8rem;
+    }
+    ul {
+        margin-top: 1rem;
+        width: 90%;
+        height: 100vh;
+}
+    
