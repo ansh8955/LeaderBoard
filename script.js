@@ -8,8 +8,7 @@ form.addEventListener('submit', function (event) {
 
 let PlayerList = [];
 
-var date = new Date();
-	document.getElementById("p1").innerHTML = date;
+
 function addPlayer(event) {
 
     event.preventDefault();
@@ -24,10 +23,13 @@ function addPlayer(event) {
     const nofield = document.getElementById('no-field');
 
     if (!firstName || !lastName || !country || !score) {
+        
         nofield.innerHTML = 'All fields are required';
         return;
     }
 
+    // if(firstName === '' || lastName === '' || country === '' || score === '')
+    // return (LI.style.display = "block");
     const playerData = {
         name: firstName + " " + lastName,
         country: country,
