@@ -21,6 +21,12 @@ function addPlayer(event) {
     const lastName = document.getElementById('last-name').value.toUpperCase();
     const country = document.getElementById('country').value.toUpperCase();
     const score = document.getElementById('score').value.toUpperCase();
+    const nofield = document.getElementById('no-field');
+
+    if (!firstName || !lastName || !country || !score) {
+        nofield.innerHTML = 'All fields are required';
+        return;
+    }
 
     const playerData = {
         name: firstName + " " + lastName,
@@ -49,7 +55,7 @@ function addPlayer(event) {
 
         incrementButton.innerHTML = '+5';
         decrementButton.innerHTML = '-5';
-        deleteButton.innerHTML = 'Remove';
+        deleteButton.innerHTML ='<i class="fa-solid fa-trash"></i>';
 
         incrementButton.setAttribute('onclick', `increment5(${index})`);
         decrementButton.setAttribute('onclick', `decrement5(${index})`);
@@ -91,7 +97,7 @@ function refreshList() {
 
         incrementButton.innerHTML = '+5';
         decrementButton.innerHTML = '-5';
-        deleteButton.innerHTML = 'Remove';
+        deleteButton.innerHTML ='<i class="fa-solid fa-trash"></i>';
 
         incrementButton.setAttribute('onclick', `increment5(${index})`);
         decrementButton.setAttribute('onclick', `decrement5(${index})`);
