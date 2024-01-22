@@ -52,6 +52,7 @@ main form div {
 }
 
 input {
+    font-size: 1rem;
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #90EE90;
@@ -76,6 +77,7 @@ ul {
     margin-top: 1rem;
     width: 80%;
     height: 100vh;
+    
 }
 
 li {

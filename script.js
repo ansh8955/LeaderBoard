@@ -22,8 +22,7 @@ function addPlayer(event) {
     const score = document.getElementById('score').value.toUpperCase();
     const nofield = document.getElementById('no-field');
 
-    if (!firstName || !lastName || !country || !score) {
-        
+    if (firstName === '' || lastName === '' || country === '' || score === '') {
         nofield.innerHTML = 'All fields are required';
         return;
     }
@@ -80,6 +79,7 @@ function addPlayer(event) {
 function refreshList() {
     const playerList = document.getElementById('player-list');
     PlayerList.sort((player1, player2) => parseInt(player2.score) - parseInt(player1.score));
+
 
     playerList.innerHTML = "";
 
